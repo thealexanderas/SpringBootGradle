@@ -37,7 +37,7 @@ public class Controller {
 	}
 	
 	@RequestMapping(value = "/family/update/{id}", method = RequestMethod.PUT)
-	public Family updateFamily(Family family, @PathVariable int id){
+	public Family updateFamily(@RequestBody Family family, @PathVariable int id){
 		return familyService.update(family, id);
 	}
 	
