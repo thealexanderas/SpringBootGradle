@@ -16,6 +16,7 @@ public class Controller {
 	@Autowired
 	FamilyService familyService;
 
+	// Greeting service
 	@RequestMapping(value ="/hi")
 	public String hello(){
 		return "Hello all!";
